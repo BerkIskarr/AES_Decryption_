@@ -5,7 +5,7 @@ This project contains a Python program that decrypts an encoded message using a 
 
 ## Files in the Project
 ### dec_decrypt_aes_part.py: The main Python script containing the decryption logic.
-### README.md: Documentation for using and understanding the decryption program.
+### README.md: Documentation for using and understanding the decryption program.
 ## How to Run the Program
 The decryption script can be run from the command line with the following syntax:
 
