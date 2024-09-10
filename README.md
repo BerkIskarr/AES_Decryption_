@@ -14,11 +14,11 @@ python dec_decrypt_aes_part.py [option]
 ```
 Where [option] can be one of the following values:
 
-#### a: Decrypt the given text using the provided key.
-#### b: Demonstrates the dec_xor function, showing the XOR operation between two byte values.
-#### c: Demonstrates the dec_swap_last_two function by swapping the last two nibbles of a byte.
-#### d: Demonstrates the dec_s_box function by applying the S-Box transformation to a byte.
-#### e: Demonstrates the dec_subtract_last_two_first_two function by subtracting the last two nibbles from the first two.
+a: Decrypt the given text using the provided key.
+b: Demonstrates the dec_xor function, showing the XOR operation between two byte values.
+c: Demonstrates the dec_swap_last_two function by swapping the last two nibbles of a byte.
+d: Demonstrates the dec_s_box function by applying the S-Box transformation to a byte.
+e: Demonstrates the dec_subtract_last_two_first_two function by subtracting the last two nibbles from the first two.
 ## Example Execution
 ``` bash
 python dec_decrypt_aes_part.py a
@@ -42,24 +42,24 @@ Swapping and subtracting operations are performed on the nibbles to further reve
 
 Once the nibbles are manipulated, they are combined back into bytes, which are then converted into readable characters, resulting in the final decrypted string.
 ## Functions Breakdown
-### dec_decrypt(): Main function that orchestrates the decryption process using the helper functions.
+dec_decrypt(): Main function that orchestrates the decryption process using the helper functions.
 
-### dec_convert_bytes_to_nibbles(): Splits a byte into four nibbles.
+dec_convert_bytes_to_nibbles(): Splits a byte into four nibbles.
 
-### dec_byte_to_nibbles(): Converts a byte into a 4-element bytearray where each element represents a nibble.
+dec_byte_to_nibbles(): Converts a byte into a 4-element bytearray where each element represents a nibble.
 
-### dec_convert_nibbles_to_bytes(): Combines four nibbles back into a single byte.
+dec_convert_nibbles_to_bytes(): Combines four nibbles back into a single byte.
 
-### dec_convert_nibbles_to_byte(): Converts a quadruple of nibbles into a single byte.
+dec_convert_nibbles_to_byte(): Converts a quadruple of nibbles into a single byte.
 
-### dec_decrypt_byte_as_nibbles(): Performs the decryption for a byte by manipulating the nibbles with XOR, swap, S-Box, and subtraction operations.
+dec_decrypt_byte_as_nibbles(): Performs the decryption for a byte by manipulating the nibbles with XOR, swap, S-Box, and subtraction operations.
 
-### dec_xor(): XORs two sets of nibbles and returns the result.
+dec_xor(): XORs two sets of nibbles and returns the result.
 
-### dec_swap_last_two(): Swaps the last two nibbles in a byte.
+dec_swap_last_two(): Swaps the last two nibbles in a byte.
 
-### dec_s_box(): Performs S-Box transformation on the nibbles.
+dec_s_box(): Performs S-Box transformation on the nibbles.
 
-### dec_subtract_last_two_first_two(): Subtracts the last two nibbles from the first two using modulo 4.
+dec_subtract_last_two_first_two(): Subtracts the last two nibbles from the first two using modulo 4.
 
-### dec_convert_bytes_to_string(): Converts a list of bytes into a readable string.
+dec_convert_bytes_to_string(): Converts a list of bytes into a readable string.
